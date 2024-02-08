@@ -5,3 +5,7 @@ print(a>b and(b>a));
 #bitwise operator
 
 print(a & b)
+
+
+
+
