@@ -121,44 +121,52 @@ elif(month == 4 or month == 6 or month == 9 or month == 11):
 else:
     print("Invalid Input")
 
-### 12.countt total number of notes in given amount
-##
-##amt =int(input("Enter the amount"))
-##fiveHundred = 0
-##hundredRupe =0
-##fiftyRupee = 0
-##twentyRupee = 0
-##tenRupee =  0
-##fiveRupee = 0
-##twoRupee = 0
-##oneRupeeCoin =0
-##
-##if(amt>=500):
-##    fiveHundred = amt/500
-##    amt -= fiveHundred *500
-##    print(f"This Amount contain{amt} Note")
-##if(amt>=100):
-##    hundredRupe =amt/100
-##    amt-= hundredRupe*100
-##if(amt>=50):
-##    fiftyRupee =amt/50
-##    amt-= fiftyRupee*50
-##if(amt>=20):
-##    twentyRupee =amt/20
-##    amt-= twentyRupee*20
-##if(amt>=10):
-##    tenRupee =amt/10
-##    amt-= tenRupee*10
-##if(amt>=5):
-##    fiveRupee =amt/5
-##    amt-= fiveRupee*5
-##if(amt>=2):
-##    twoRupee=amt/2
-##    amt-= twoRupee*2
-##if(amt>=1):
-##    oneRupeeCoin =amt/1
-##    amt-= hundredRupe*1
+### 12.count total number of notes in given amount
 
+amt =int(input("Enter the amount"))
+fiveHundred = 0
+hundredRupe =0
+fiftyRupee = 0
+twentyRupee = 0
+tenRupee =  0
+fiveRupee = 0
+twoRupee = 0
+oneRupeeCoin =0
+
+if(amt>=500):
+    fiveHundred = amt//500
+    amt -= fiveHundred *500
+    
+if(amt>=100):
+    hundredRupe =amt//100
+    amt-= hundredRupe*100
+if(amt>=50):
+    fiftyRupee =amt//50
+    amt-= fiftyRupee*50
+if(amt>=20):
+    twentyRupee =amt//20
+    amt-= twentyRupee*20
+if(amt>=10):
+    tenRupee =amt//10
+    amt-= tenRupee*10
+if(amt>=5):
+    fiveRupee =amt//5
+    amt-= fiveRupee*5
+if(amt>=2):
+    twoRupee=amt//2
+    amt-= twoRupee*2
+if(amt>=1):
+    oneRupeeCoin =amt//1
+    amt-= hundredRupe*1
+print("500 Notes:",fiveHundred)
+print("100 Notes:",hundredRupe)
+print("50  Notes:",fiftyRupee)
+print("20  Notes:",twentyRupee)
+print("10  Notes:",tenRupee)
+print("05  Notes:",fiveRupee)
+print("02  Notes:",twoRupee)
+print("01  Coins:",oneRupeeCoin)
+    
 # 13.Whether triangle is valid or not using angles
 print("Whether triangle is valid or not using angles")
 angle1 = int(input("Enter the 1st angle"))
@@ -257,6 +265,7 @@ print(f"The Gross Salary of Employee is {grossSalary}")
 
 #19
 print("Quadratic Equation")
+import math
 a= int(input("Enter the Number:")
 b= int(input("Enter the Number:")
 c= int(input("Enter the Number:")
